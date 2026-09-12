@@ -131,3 +131,32 @@ echo trim($someText); echo '<br>';
 //how to split a string into an array
 $arrayStatement = explode(" ", $statement);
 print_r ($arrayStatement); echo '<br>';
+
+//menggabungkan string
+$x = "hello";
+$y = "world";
+$z = $x . " " . $y;
+echo $z; echo '<br>';
+echo "$x . $y"; echo '<br>';
+
+//membelah string
+//The substr() function is used to extract a part of a string (slice a string)
+$oldtxt = "hai dunia";
+echo substr($oldtxt,  2, 5); echo '<br>';
+echo substr($oldtxt, 4); echo '<br>';
+echo substr($oldtxt, -5, 4); echo '<br>';
+echo substr($oldtxt, 4, -1); echo '<br>';
+
+//escape character
+//an escape character is a backslash \ followed by the character you want to insert
+$x = "We are the so-called \"Vikings\" from the north.";
+echo $x; echo '<br>';
+//> \' < used for single quotes
+//> \" < used for double quotes
+//> \$ < used for PHP variable
+//> \n < used for new line
+//> \r < used for carriage return
+//> \t < used for tab
+//> \f < used for form feed
+//> \ooo < used for octal value
+//> \xhh < used for hex value
